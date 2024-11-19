@@ -1,0 +1,27 @@
+theme = "tokyonight_storm"
+
+[editor]
+color-modes = true
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+enable = true
+display-messages = true
+#display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.statusline]
+left = ["mode", "spacer","diagnostics", "workspace-diagnostics", "spinner"]
+right = ["version-control", "file-name","file-modification-indicator", "position", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
